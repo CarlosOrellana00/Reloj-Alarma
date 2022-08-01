@@ -51,7 +51,7 @@ function setAlarm() {
         alarmTime = "";
         ringtone.pause();
         content.classList.remove("disable");
-        setAlarmBtn.innerText = "Set Alarm";
+        setAlarmBtn.innerText = "Tocar Alarma!";
         return isAlarmSet = false;
     }
 
@@ -62,7 +62,7 @@ function setAlarm() {
     alarmTime = time;
     isAlarmSet = true;
     content.classList.add("disable");
-    setAlarmBtn.innerText = "Clear Alarm";
+    setAlarmBtn.innerText = "Detener Alarma!";
 }
 
 setAlarmBtn.addEventListener("click", setAlarm);
