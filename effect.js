@@ -57,7 +57,7 @@ function setAlarm() {
 
     let time = `${selectMenu[0].value}:${selectMenu[1].value} ${selectMenu[2].value}`;
     if (time.includes("Hour") || time.includes("Minute") || time.includes("AM/PM")) {
-        return alert("Por Favor, Seleccione una Hora valida para la Alarma!");
+        return alert("Por Favor, Seleccione una Hora con minutos validos para la Alarma!");
     }
     alarmTime = time;
     isAlarmSet = true;
